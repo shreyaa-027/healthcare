@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CartLabActivity">
+
+    <TextView
+        android:id="@+id/textViewLTPune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Location : Pune"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CartTitle"
+        app:layout_constraintVertical_bias="0.017" />
+
+
+    <TextView
+        android:id="@+id/textViewCartPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test Cart Items"
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CartTitle"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="308dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CartTitle"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <Button
+        android:id="@+id/cartcheckout"
+        android:layout_width="127dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="424dp"
+        android:text="CHECKOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CartTitle"
+        app:layout_constraintVertical_bias="0.846" />
+
+    <Button
+        android:id="@+id/btnCartBack"
+        android:layout_width="116dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="424dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CartTitle"
+        app:layout_constraintVertical_bias="0.848" />
+
+    <TextView
+        android:id="@+id/textView_CartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24*7 Healthcare"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="172dp"
+
+        android:text="Select Date"
+        android:textColor="@color/yellowLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTime"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="172dp"
+
+        android:text="Select Time"
+        android:textColor="@color/yellowLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewCartTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="188dp"
+        android:text="Total Cost :"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewCart" />
+
+    <Button
+        android:id="@+id/buttoncart_Date"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="DATE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttoncartTime"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <Button
+        android:id="@+id/buttoncartTime"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="138dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="TIME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
